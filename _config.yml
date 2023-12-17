@@ -1,0 +1,56 @@
+# site settings
+
+title: Amal Feriani
+description: Research Machine Learning Engineer
+taglong: Machine Learning Research Engineer
+baseurl: ""
+permalink: pretty
+repo: https://github.com/amalF/amalferiani.github.io
+
+# author settings
+author:
+  name: Amal Feriani
+  email: amal[dot]feriani[at]gmail[dot]com
+photo: /assets/jpg/amal.jpg
+
+# social media links
+
+social:
+  github: amalF
+  linkedin: amal-f-64302555
+  twitter: AmalFeriani
+  google: https://scholar.google.com/citations?user=mrnUYawAAAAJ&hl=en
+  cv: CV_Amal_Feriani_v2.pdf
+# build settings
+
+exclude:
+  - LICENSE
+  - README.md
+
+plugins:
+  - jekyll-feed
+  - jekyll-gist
+  - jekyll-paginate-v2
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+whitelist:
+  - jekyll-sitemap
+
+sass:
+  sass_dir: _sass
+  style: compressed
+  sourcemap: never
+
+feed:
+  path: atom.xml
+
+autopages:
+  enabled: false
+
+pagination:
+  enabled: true
+  per_page: 1
+  sort_reverse: true
+  permalink: /:num/
+  title: ":title &middot; Page :num"
